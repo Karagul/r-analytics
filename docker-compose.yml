@@ -1,0 +1,11 @@
+rstudio:
+  build: .
+  container_name: r-analytics_studio
+  tty: true
+  ports:
+    - "8787:8787"
+  environment:
+    USER: user
+    PASSWORD: pw
+  volumes:
+    - .:/home/user
